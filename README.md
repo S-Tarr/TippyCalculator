@@ -1,4 +1,4 @@
-# Pre-work - *Name of App Here*
+# Pre-work - *Tippy*
 
 **Name of your app** is a tip calculator application for iOS.
 
