@@ -7,20 +7,26 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var billTextView: UITextField!
-    
     @IBOutlet weak var percentTextView: UITextField!
-   
     @IBOutlet weak var tipTextView: UILabel!
-    
     @IBOutlet weak var totalAmountTextView: UILabel!
+    @IBOutlet weak var topBackground: UIView!
+    @IBOutlet weak var buttonBackground: UIView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        topBackground.layer.cornerRadius = 18
+        buttonBackground.layer.cornerRadius = 18
+        
+        
     }
     @IBAction func calculate(_ sender: Any) {
         let bill = Double(billTextView.text ?? "0") ?? 0
@@ -33,7 +39,9 @@ class ViewController: UIViewController {
         totalAmountTextView.text = "$\(total)"
         
         
+        
     }
+    
     
 
 }
